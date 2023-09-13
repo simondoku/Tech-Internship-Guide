@@ -1,8 +1,11 @@
+import { Home } from './pages/Home';
+import { Navbar } from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className='text-primary'>Tech Internship guide</h1>
+    <div className="container-fluid min-vh-100">
+      <Navbar />
+      <Home />
     </div>
   );
 }
