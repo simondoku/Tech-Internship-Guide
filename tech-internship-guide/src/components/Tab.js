@@ -3,6 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
+import {Block} from './Block';
 
 const TAB_NAMES = [{tabName: 'Classes', eventKey: 'classes'}, {tabName: 'Projects', eventKey: 'projects'}, {tabName: 'Resume', eventKey: 'resume'}, {tabName: 'Interview', eventKey: 'interview'},{tabName: 'Internships', eventKey: 'internships'},{tabName: 'Notes', eventKey: 'notes'}, {tabName: 'Networking', eventKey: 'networking'},{tabName: 'Stories', eventKey: 'stories'},{tabName: 'FAQs', eventKey: 'faqs'}];
 
@@ -36,7 +37,7 @@ export const TabGroup = () => {
             <Col sm={9}>
               <Tab.Content>
                 {TAB_NAMES.map((item, index) => (
-                  <TabPane key={index} eventKey={item?.eventKey} content={'Tella Content'}/>  
+                  <TabPane key={index} eventKey={item?.eventKey} content={<Block blockName={"FreeCodeCamp"} blockLink={""}/>}/>  
                 ))}
               </Tab.Content>
             </Col>
