@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 
-const TAB_NAMES = [{tabName: 'Classes', eventKey: 'classes'}, {tabName: 'Projects', eventKey: 'projects'}, {tabName: 'Resume', eventKey: 'resume'}, {tabName: 'Interview', eventKey: 'interview'},];
+const TAB_NAMES = [{tabName: 'Classes', eventKey: 'classes'}, {tabName: 'Projects', eventKey: 'projects'}, {tabName: 'Resume', eventKey: 'resume'}, {tabName: 'Interview', eventKey: 'interview'},{tabName: 'Internships', eventKey: 'internships'},{tabName: 'Notes', eventKey: 'notes'}, {tabName: 'Networking', eventKey: 'networking'},{tabName: 'Stories', eventKey: 'stories'},{tabName: 'FAQs', eventKey: 'faqs'}];
 
 const NavItem = (props) => {
   const {tabName, eventKey} = props;
