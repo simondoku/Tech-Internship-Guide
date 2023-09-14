@@ -1,5 +1,10 @@
 $theme-colors: (
   'primary': #3ED1DB,
+  'secondary': #1c1616, 
+  'dark': #000000,
+  'light': white,
+  'danger': orange,
+  'info': #eeeeee,
 );
 
 @import '~bootstrap/scss/bootstrap';

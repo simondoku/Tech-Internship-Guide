@@ -11,7 +11,7 @@ const NavItem = (props) => {
   const {tabName, eventKey} = props;
   return(
     <Nav.Item>
-      <Nav.Link eventKey={eventKey}>{tabName}</Nav.Link>
+      <Nav.Link className="text-light border mb-2" eventKey={eventKey}>{tabName}</Nav.Link>
     </Nav.Item>
   );
 };
@@ -25,16 +25,16 @@ const TabPane = (props) => {
 
 export const TabGroup = () => {
     return(
-        <Tab.Container id="left-tabs-example" defaultActiveKey="classes">
+        <Tab.Container id="left-tabs" defaultActiveKey="classes">
           <Row>
-            <Col sm={3}>
-              <Nav variant="pills" className="flex-column">
+            <Col sm={2}>
+              <Nav variant="pills" className="flex-column bg-dark rounded p-2 border">
               {TAB_NAMES.map((item, index) => (
                 <NavItem key={index} tabName={item?.tabName} eventKey={item?.eventKey}/>
               ))}
               </Nav>
             </Col>
-            <Col sm={9}>
+            <Col sm={10}>
               <Tab.Content>
                 {TAB_NAMES.map((item, index) => (
                   <TabPane key={index} eventKey={item?.eventKey} content={<Block blockName={"FreeCodeCamp"} blockLink={""}/>}/>  
