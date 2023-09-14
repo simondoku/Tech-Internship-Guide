@@ -11,7 +11,7 @@ const NavItem = (props) => {
   const {tabName, eventKey} = props;
   return(
     <Nav.Item>
-      <Nav.Link className="text-light border mb-2" eventKey={eventKey}>{tabName}</Nav.Link>
+      <Nav.Link className="text-light border rounded-3 mb-2 p-1 px-2" eventKey={eventKey}>{tabName}</Nav.Link>
     </Nav.Item>
   );
 };
@@ -28,7 +28,7 @@ export const TabGroup = () => {
         <Tab.Container id="left-tabs" defaultActiveKey="classes">
           <Row>
             <Col sm={2}>
-              <Nav variant="pills" className="flex-column bg-dark rounded p-2 border">
+              <Nav variant="pills" className="flex-column bg-dark rounded-3 p-2 border">
               {TAB_NAMES.map((item, index) => (
                 <NavItem key={index} tabName={item?.tabName} eventKey={item?.eventKey}/>
               ))}
