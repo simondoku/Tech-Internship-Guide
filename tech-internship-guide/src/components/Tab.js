@@ -28,7 +28,7 @@ export const TabGroup = () => {
         <Tab.Container id="left-tabs" defaultActiveKey="classes">
           <Row>
             <Col sm={2}>
-              <Nav variant="pills" className="flex-column bg-dark rounded-3 p-2 border mt-5 pt-3 ms-2">
+              <Nav variant="pills" className="flex-column bg-dark rounded-3 p-2 border mt-5 pt-3">
               {TAB_NAMES.map((item, index) => (
                 <NavItem key={index} tabName={item?.tabName} eventKey={item?.eventKey}/>
               ))}
