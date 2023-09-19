@@ -23,15 +23,18 @@ export const Block = (props) => {
             </div>
             <div style={{display: 'flex', flex: '1', justifyContent: 'space-between'}} className="pb-1 px-2">
                 <div>
-                    {blockName} {blockLink}
+                    {blockName}
                 </div>
                 <div>
                     <IconButtonWrapper>
                         <RemoveRedEyeOutlinedIcon fontSize="small"/>
                     </IconButtonWrapper>
-                    <IconButtonWrapper>
-                        <LaunchIcon fontSize="small"/>  
-                    </IconButtonWrapper>
+                    <a href={(blockLink && 'https://www.'+ blockLink) || null} target="_blank" rel="noreferrer">
+                        <IconButtonWrapper>
+                        
+                            <LaunchIcon fontSize="small"/>                     
+                        </IconButtonWrapper>
+                    </a>
                 </div>
             </div>          
         </Card>

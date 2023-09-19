@@ -9,7 +9,7 @@ const ClassRowContent = (props) => {
     return(
         <Row>
             <Col>
-                {block1 && <Block blockName={block1} blockLink={""}/>}
+                {block1 && <Block blockName={block1} blockLink={"w3schools.com"}/>}
             </Col>
             <Col>
                 {block2 && <Block blockName={block2} blockLink={""}/>}
