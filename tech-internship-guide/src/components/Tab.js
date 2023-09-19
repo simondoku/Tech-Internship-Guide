@@ -3,9 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
-import { Class } from "../pages/Class";
-
-const TAB_NAMES = [{tabName: 'Classes', eventKey: 'classes'}, {tabName: 'Projects', eventKey: 'projects'}, {tabName: 'Resume', eventKey: 'resume'}, {tabName: 'Interview', eventKey: 'interview'},{tabName: 'Internships', eventKey: 'internships'},{tabName: 'Notes', eventKey: 'notes'}, {tabName: 'Networking', eventKey: 'networking'},{tabName: 'Stories', eventKey: 'stories'},{tabName: 'FAQs', eventKey: 'faqs'}];
+import { TAB_NAMES } from "../core/tab-names";
 
 const NavItem = (props) => {
   const {tabName, eventKey} = props;
@@ -37,7 +35,7 @@ export const TabGroup = () => {
             <Col sm={10}>
               <Tab.Content>
                 {TAB_NAMES.map((item, index) => (
-                  <TabPane key={index} eventKey={item?.eventKey} content={<Class/>}/>  
+                  <TabPane key={index} eventKey={item?.eventKey} content={item?.comp}/>  
                 ))}
               </Tab.Content>
             </Col>

@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 const ClassRowContent = (props) => {
     const { block1, block2, block3 } = props;
     return(
-        <Row>
+        <Row className="mb-3">
             <Col>
                 {block1 && <Block blockName={block1} blockLink={"w3schools.com"}/>}
             </Col>
