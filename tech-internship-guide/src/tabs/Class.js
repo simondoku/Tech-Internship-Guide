@@ -9,13 +9,13 @@ const ClassRowContent = (props) => {
     return(
         <Row className="mb-3">
             <Col>
-                {block1 && <Block blockName={block1} blockLink={"w3schools.com"}/>}
+                {block1 && <Block blockId={block1} />}
             </Col>
             <Col>
-                {block2 && <Block blockName={block2} blockLink={""}/>}
+                {block2 && <Block blockId={block2} />}
             </Col>
             <Col>
-                {block3 && <Block blockName={block3} blockLink={""}/>}
+                {block3 && <Block blockId={block3} />}
             </Col>
         </Row>
     );
@@ -26,12 +26,12 @@ export const Class = () => {
         <div className="text-light">
             <Container className="mb-5">
                 <p>Programming Fundamentals</p>
-                <ClassRowContent block1={"W3schools"} block2={"FreeCodeCamp"} block3={"Codeacademy"} />
+                <ClassRowContent block1={"w3schools"} block2={"freeCodeCamp"} block3={"codeacademy"} />
             </Container>
 
             <Container>
                 <p>Data Structures and Algorithms</p>
-                <ClassRowContent block1={"NeetCode"} block2={"Google"} block3={"Geeks for Geeks"}/>
+                <ClassRowContent block1={"neetCode"} block2={"google"} block3={"geeksforgeeks"} />
             </Container>
         </div>
     );
