@@ -6,3 +6,10 @@ export const BLOCK_CONTENTS = {
     google: {name: 'Google', link:'google.com', description: 'Simon and Beverly task'},
     geeksforgeeks: {name: 'Geeks for Geeks', link:'geeksforgeeks.org/data-structures/?ref=shm_outind', description: 'Simon and Beverly task'},
 }
+
+export const FAQS = [
+    {id: '1', question: 'Sample Question', answer: 'The answer is right here'},
+    {id: '2', question: 'What is coding', answer: 'The answer is right here'},
+    {id: '3', question: 'Look?', answer: 'The answer is right here'},
+    {id: '4', question: 'Internship?', answer: 'The answer is right here'},
+]

@@ -1,7 +1,11 @@
 import React from "react";
+import { Accordion } from "../components/Accordion";
 
 export const Faq = () => {
     return(
-        <div className="text-light">FAQs</div>
+        <>
+            <p className="mb-3 text-light">Frequently Asked Questions</p>
+            <Accordion/>
+        </>
     );
 };
