@@ -14,7 +14,7 @@ const AccordionItem = (props) => {
 
 export const Accordion = () => {
     return(
-        <Accord className="mb-3">
+        <Accord className="mb-3" style={{width: '70vw'}}>
             {FAQS.map((item, index) => (
                 <AccordionItem eventKey={index} key={index} question={item?.question} answer={item?.answer}/>
             ))}

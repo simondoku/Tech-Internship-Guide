@@ -4,8 +4,10 @@ import { Accordion } from "../components/Accordion";
 export const Faq = () => {
     return(
         <>
-            <p className="mb-3 text-light">Frequently Asked Questions</p>
-            <Accordion/>
+            <p className="mb-4 text-light text-center">Frequently Asked Questions</p>
+            <div style={{display: "flex", justifyContent: "center"}}>
+                <Accordion/>
+            </div>
         </>
     );
 };
