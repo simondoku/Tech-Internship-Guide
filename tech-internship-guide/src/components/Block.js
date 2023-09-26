@@ -4,7 +4,8 @@ import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import LaunchIcon from '@mui/icons-material/Launch';
 import { Button } from "react-bootstrap";
 import { InfoModal, ModalContent } from "./InfoModal";
-import { BLOCK_CONTENTS } from "../core/block-cores";
+import { BLOCK_CONTENTS, BLOCK_SECTIONS } from "../core/block-cores";
+import Container from 'react-bootstrap/Container';
 
 const IconButtonWrapper = (props) => {
     const { children, clickAction } = props;
@@ -13,6 +14,23 @@ const IconButtonWrapper = (props) => {
             {children}
         </Button>
     ); 
+};
+
+export const BlockSection = (props) => {
+    const { sectionName, sectionId } = props;
+
+    return(
+        <Container className="mb-3">
+            <p>{sectionName}</p>
+            <div style={{display: 'flex', overflowX: 'auto'}}>
+                {BLOCK_SECTIONS?.[sectionId].map((item, index) => (
+                    <div className="me-5 pb-3">
+                        <Block blockId={item} key={index}/>
+                    </div>
+                ))}
+            </div>
+        </Container>
+    );
 };
 
 export const Block = (props) => {
