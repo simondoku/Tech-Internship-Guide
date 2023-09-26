@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 
 export const Navbar = () => {
     return(
-        <div>
+        <div className="px-3">
             <NavbarBoot data-bs-theme="dark">
                 <div style={{display: 'flex', flex: '1'}}>
                     <NavbarBoot.Brand href="#home" className="text-primary">Tech Internship Guide</NavbarBoot.Brand>

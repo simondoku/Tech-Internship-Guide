@@ -7,6 +7,11 @@ export const BLOCK_CONTENTS = {
     geeksforgeeks: {name: 'Geeks for Geeks', link:'geeksforgeeks.org/data-structures/?ref=shm_outind', description: 'Simon and Beverly task'},
 }
 
+export const BLOCK_SECTIONS = {
+    pFundamentals: ['w3schools', 'freeCodeCamp', 'codeacademy', 'neetCode', 'google', 'geeksforgeeks'],
+    dSA: ['neetCode', 'google', 'geeksforgeeks'],
+} 
+
 export const FAQS = [
     {id: '1', question: 'Sample Question', answer: 'The answer is right here'},
     {id: '2', question: 'What is coding', answer: 'The answer is right here'},

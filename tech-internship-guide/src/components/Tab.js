@@ -26,18 +26,20 @@ export const TabGroup = () => {
         <Tab.Container id="left-tabs" defaultActiveKey="classes">
           <Row>
             <Col sm={2}>
-              <Nav variant="pills" className="flex-column bg-dark rounded-3 p-2 border mt-5 pt-3">
+              <Nav variant="pills" className="flex-column bg-dark rounded-3 p-2 mt-5 pt-3" style={{border: '1px solid #9C9B9B'}}>
               {TAB_NAMES.map((item, index) => (
                 <NavItem key={index} tabName={item?.tabName} eventKey={item?.eventKey}/>
               ))}
               </Nav>
             </Col>
             <Col sm={10}>
-              <Tab.Content>
-                {TAB_NAMES.map((item, index) => (
-                  <TabPane key={index} eventKey={item?.eventKey} content={item?.comp}/>  
-                ))}
-              </Tab.Content>
+              <div style={{overflow: 'auto', height: '70vh'}}>
+                <Tab.Content >
+                  {TAB_NAMES.map((item, index) => (
+                    <TabPane key={index} eventKey={item?.eventKey} content={item?.comp}/>  
+                  ))}
+                </Tab.Content>
+              </div>
             </Col>
           </Row>
         </Tab.Container>

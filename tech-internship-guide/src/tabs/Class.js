@@ -1,38 +1,30 @@
 import React from "react";
 import { Block } from "../components/Block";
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { BLOCK_SECTIONS } from "../core/block-cores";
 
-const ClassRowContent = (props) => {
-    const { block1, block2, block3 } = props;
+const ClassSection = (props) => {
+    const { sectionName, sectionId } = props;
+
     return(
-        <Row className="mb-3">
-            <Col>
-                {block1 && <Block blockId={block1} />}
-            </Col>
-            <Col>
-                {block2 && <Block blockId={block2} />}
-            </Col>
-            <Col>
-                {block3 && <Block blockId={block3} />}
-            </Col>
-        </Row>
+        <Container className="mb-3">
+            <p>{sectionName}</p>
+            <div style={{display: 'flex', overflowX: 'auto'}}>
+                {BLOCK_SECTIONS?.[sectionId].map((item, index) => (
+                    <div className="me-5 pb-3">
+                        <Block blockId={item} key={index}/>
+                    </div>
+                ))}
+            </div>
+        </Container>
     );
 };
 
 export const Class = () => {
     return(
         <div className="text-light">
-            <Container className="mb-5">
-                <p>Programming Fundamentals</p>
-                <ClassRowContent block1={"w3schools"} block2={"freeCodeCamp"} block3={"codeacademy"} />
-            </Container>
-
-            <Container>
-                <p>Data Structures and Algorithms</p>
-                <ClassRowContent block1={"neetCode"} block2={"google"} block3={"geeksforgeeks"} />
-            </Container>
+            <ClassSection sectionName={"Programming Fundamentals"} sectionId={'pFundamentals'}/>
+            <ClassSection sectionName={'Data Structures and Algorithm'} sectionId={'dSA'}/>
         </div>
     );
 };
