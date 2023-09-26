@@ -31,7 +31,7 @@ export const Class = () => {
 
             <Container>
                 <p>Data Structures and Algorithms</p>
-                <ClassRowContent block1={"neetCode"} block2={"coursera"} block3={"geeksforgeeks"} />
+                <ClassRowContent block1={"neetCode"} block2={"google"} block3={"geeksforgeeks"} />
             </Container>
         </div>
     );
