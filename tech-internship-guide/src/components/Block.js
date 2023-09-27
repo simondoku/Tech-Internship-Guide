@@ -24,7 +24,7 @@ export const BlockSection = (props) => {
             <p>{sectionName}</p>
             <div style={{display: 'flex', overflowX: 'auto'}}>
                 {BLOCK_SECTIONS?.[sectionId].map((item, index) => (
-                    <div className="me-5 pb-3">
+                    <div className="me-5 pb-2">
                         <Block blockId={item} key={index}/>
                     </div>
                 ))}
