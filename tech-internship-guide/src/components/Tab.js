@@ -24,7 +24,7 @@ const TabPane = (props) => {
 export const TabGroup = () => {
     return(
         <Tab.Container id="left-tabs" defaultActiveKey="classes">
-          <Row>
+          <Row className="ps-3">
             <Col sm={2}>
               <Nav variant="pills" className="flex-column bg-dark rounded-3 p-2 mt-5 pt-3" style={{border: '1px solid #9C9B9B'}}>
               {TAB_NAMES.map((item, index) => (
