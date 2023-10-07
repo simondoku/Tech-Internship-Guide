@@ -6,11 +6,14 @@ export const BLOCK_CONTENTS = {
     coursera: {name: 'Coursera', link:'coursera.org', description: 'Coursera is an online learning platform that offers courses, certificates, and degrees from 200+ leading universities and companies. The platform offers courses in a wide range of subjects, including business, computer science, data science, math, science, and more. You can earn certificates and show it off on your resume!'},
     geeksforgeeks: {name: 'Geeks for Geeks', link:'geeksforgeeks.org/data-structures/?ref=shm_outind', description: 'GeeksforGeeks is a computer science portal for geeks. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions. The website covers a wide range of programming languages and computer science concepts, making it a valuable resource for both beginners and experienced programmers. It is particularly popular for its competitive programming and data structure/algorithms content.'},
     harvardCS50: {name: 'HarvardCS50', link:'harvard.edu/search/?q_as=CS50', description: 'HarvardCS50 is a free online course that teaches you the basics of computer science. It is a great resource for beginners to learn the fundamentals of computer science and programming.'},
+    personalNote: {name: 'Personal Notes', link: '', description: ''},
+    onlineNote: {name: 'Online Notes', link: '', description: ''},
 }
 
 export const BLOCK_SECTIONS = {
     pFundamentals: ['w3schools', 'freeCodeCamp', 'codeacademy', 'neetCode', 'coursera', 'geeksforgeeks', "harvardCS50"],
     dSA: ['neetCode', 'coursera', 'geeksforgeeks'],
+    note: ['personalNote', 'onlineNote'],
 } 
 
 export const FAQS = [
@@ -26,5 +29,5 @@ export const FAQS = [
 export const STORIES = [
     {id: '1', company: 'Uber', story: 'Tella story?'},
     {id: '2', company: 'Zillow', story: 'Simon story?'},
-    {id: '3', company: 'Summer Internship Experience at Almada', story: 'My summer internship at Almada was a transformative experience that immersed me in the technology sector. I handled customer inquiries, troubleshooting BIOS issues, and learned the value of diverse skills. Collaborating with interns, we presented on technical topics and explored AIs potential in cybersecurity. The internship broadened my web development skills and introduced me to AIs impact on network security and database organization. The supportive work environment, camaraderie, and teamwork were invaluable, emphasizing the importance of collaboration. The highlight was working on an AI system for database organization and network security. This experience enhanced my problem-solving, communication, and innovation skills, leaving me inspired for future endeavors in technology.'},
+    {id: '3', company: 'Almada', story: 'My summer internship at Almada was a transformative experience that immersed me in the technology sector. I handled customer inquiries, troubleshooting BIOS issues, and learned the value of diverse skills. Collaborating with interns, we presented on technical topics and explored AIs potential in cybersecurity. The internship broadened my web development skills and introduced me to AIs impact on network security and database organization. The supportive work environment, camaraderie, and teamwork were invaluable, emphasizing the importance of collaboration. The highlight was working on an AI system for database organization and network security. This experience enhanced my problem-solving, communication, and innovation skills, leaving me inspired for future endeavors in technology.'},
 ]
