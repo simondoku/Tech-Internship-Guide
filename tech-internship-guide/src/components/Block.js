@@ -41,8 +41,8 @@ export const Block = (props) => {
     };
 
     return(
-        <Card style={{ width: blockWidth ? blockWidth : '24vw', backgroundColor: 'black', color: 'white' }} className="mb-2 text-light">
-            <div style={{backgroundColor: "#eeeeee", margin: '10px', height: blockHeight ? blockHeight: '20vh'}} className="rounded">
+        <Card style={{ width: blockWidth ? blockWidth : '24vw', minWidth: '14rem', backgroundColor: 'black', color: 'white' }} className="mb-2 text-light">
+            <div style={{backgroundColor: "#eeeeee", margin: '10px', height: blockHeight ? blockHeight : '20vh', minHeight: '9rem'}} className="rounded">
                 <Card.Img className="img-fluid" variant="top" src=""/>
             </div>
             <div style={{display: 'flex', flex: '1', justifyContent: 'space-between'}} className="pb-1 px-2">
