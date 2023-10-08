@@ -1,11 +1,13 @@
 import React from "react";
 import { FeaturedStory } from "../components/FeaturedStory";
-import { STORIES } from "../core/block-cores";
+import { useFetch } from "../hooks/useFetch";
 
 export const Story = () => {
+    const storyDATA = useFetch("stories");
+
     return(
         <div className="text-light">
-            {STORIES.map((item, index) => (
+            {storyDATA.map((item, index) => (
                 <FeaturedStory featuredItem={item} key={index}/>
             ))}   
         </div>

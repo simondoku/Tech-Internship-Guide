@@ -1,6 +1,6 @@
 import React from "react";
 import { Accordion as Accord } from 'react-bootstrap';
-import { FAQS } from "../core/block-cores";
+import { useFetch } from "../hooks/useFetch";
 
 const AccordionItem = (props) => {
     const { eventKey, question, answer } = props;
@@ -13,9 +13,11 @@ const AccordionItem = (props) => {
 };
 
 export const Accordion = () => {
+    const faqDATA = useFetch("faqs");
+    
     return(
         <Accord className="mb-3" style={{width: '70vw'}}>
-            {FAQS.map((item, index) => (
+            {faqDATA.map((item, index) => (
                 <AccordionItem eventKey={index} key={index} question={item?.question} answer={item?.answer}/>
             ))}
         </Accord>

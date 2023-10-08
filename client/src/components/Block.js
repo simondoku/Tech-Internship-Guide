@@ -4,8 +4,9 @@ import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import LaunchIcon from '@mui/icons-material/Launch';
 import { Button } from "react-bootstrap";
 import { InfoModal, ModalContent } from "./InfoModal";
-import { BLOCK_CONTENTS, BLOCK_SECTIONS } from "../core/block-cores";
+import { BLOCK_SECTIONS } from "../core/block-cores";
 import Container from 'react-bootstrap/Container';
+import { useFetch } from "../hooks/useFetch";
 
 const IconButtonWrapper = (props) => {
     const { children, clickAction } = props;
@@ -35,6 +36,7 @@ export const BlockSection = (props) => {
 
 export const Block = (props) => {
     const [show, setShow] = useState(false);
+    const blockDATA = useFetch("block-data");
     const { blockId, blockWidth, blockHeight } = props;
     const handleInfoClick = () => {
         setShow(true);
@@ -47,17 +49,17 @@ export const Block = (props) => {
             </div>
             <div style={{display: 'flex', flex: '1', justifyContent: 'space-between'}} className="pb-1 px-2">
                 <div>
-                    {BLOCK_CONTENTS?.[blockId]?.name}
+                    {blockDATA?.[blockId]?.name}
                 </div>
                 <div>
                     <IconButtonWrapper clickAction={handleInfoClick}>
                         <RemoveRedEyeOutlinedIcon fontSize="small"/>
                     </IconButtonWrapper>
                     {<InfoModal show={show} setShow={setShow}>
-                        <ModalContent modalBodyContent={BLOCK_CONTENTS?.[blockId]?.description} modalTitle={BLOCK_CONTENTS?.[blockId]?.name}/>
+                        <ModalContent modalBodyContent={blockDATA?.[blockId]?.description} modalTitle={blockDATA?.[blockId]?.name}/>
                      </InfoModal>
                     }
-                    <a href={('https://www.'+ BLOCK_CONTENTS?.[blockId]?.link) || null} target="_blank" rel="noreferrer">
+                    <a href={('https://www.'+ blockDATA?.[blockId]?.link) || null} target="_blank" rel="noreferrer">
                         <IconButtonWrapper>
                         
                             <LaunchIcon fontSize="small"/>                     
