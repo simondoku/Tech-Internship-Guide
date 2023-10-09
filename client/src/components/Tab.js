@@ -9,7 +9,7 @@ const NavItem = (props) => {
   const {tabName, eventKey} = props;
   return(
     <Nav.Item>
-      <Nav.Link className="text-light mb-3 rounded-4 px-2 fw-bold" style={{border: '1px solid #9C9B9B',}} eventKey={eventKey}>{tabName}</Nav.Link>
+      <Nav.Link className="text-light mb-3 rounded-4 px-2 fw-bold" style={{border: '1px solid #9C9B9B',}} eventKey={eventKey}> <img src={require("../images/dot.png")} alt="" className="me-1"/> {tabName}</Nav.Link>
     </Nav.Item>
   );
 };

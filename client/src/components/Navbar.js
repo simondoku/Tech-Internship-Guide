@@ -23,7 +23,7 @@ export const Navbar = () => {
             </NavbarBoot>
             <div className='text-center mb-sm-5 mt-4'>
                 <h3 className='text-primary fs-2 fw-bold'>Unlock Your Internship Adventure:<br/>Your Ultimate Guide to Tech Success Begins Here!</h3>
-                <p className='text-light fs-5'>A collections of all resources you need to land your first Computer Science Internship</p>
+                <p className='text-light fs-5'>A collection of all resources you need to land your first Computer Science Internship</p>
             </div>
         </div>
     );
