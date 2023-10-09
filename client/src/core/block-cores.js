@@ -12,12 +12,12 @@ export const BLOCK_SECTIONS = {
     behInterview: ['interviewio','codeSignal','gainlo','pramp','indeed','theMuse'],
     intern: ['gitHubIntern','zipRecruiter','glassDoor','simplyHired','reu'],
     diverseGroup: ['colorstack','rewritingTheCode','nsbe'],
-    techEvents: ['ghc','afroTech','ces','techCrunch','webSummit','googleio','microIgnite','aws','rsa','blackhat','defcon','apple'],
+    techEvents: ['ghc','afroTech','ces','techCrunch','webSummit','googleio','microIgnite','aws','rsa','blackHat','defcon','apple'],
     profOrg: ['codepath','acm','compTIA'],
 } 
 
 export const BLOCK_IMAGES = new Set([ 
-    'w3schools', 'codeacademy', 'freeCodeCamp', 'neetCode', 'acm','afroTech', 'algoExpert','anitaB','apple','aws','behance','blackhat','theBalanceCareers','canvaTem','carbonMade','cargo',
+    'w3schools', 'codeacademy', 'freeCodeCamp', 'neetCode', 'acm','afroTech', 'algoExpert','anitaB','apple','aws','behance','blackHat','theBalanceCareers','canvaTem','carbonMade','cargo',
     'ces','codeacedemy','codepath','codepen','codeSignal','colorstack','compTIA','coursera','defcon', 'dribble','edX',
     'freeCodeCamp', 'frontEndMasters','gainlo','gameDevNet','geeksforgeeks','ghc','github','githubAWDRepo','gitHubIntern','githubPage','glassDoor',
     'google','googleDocsTemp','googleio','hackerRank','harvardCS50','hloom','indeed','interviewBit','interviewio','jsfiddle',
