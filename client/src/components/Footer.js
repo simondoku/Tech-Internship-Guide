@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 
 export const Footer = () => {
     return(
-        <div style={{justifyContent: 'space-between'}} className="d-sm-flex d-grid px-3 py-2 text-white border-top border-white">
+        <div style={{justifyContent: 'space-between'}} className="d-sm-flex d-grid px-3 py-2 text-info border-top border-white">
             <div className="text-center">
                 What is the Tech Internship Guide?<br/>
                 It's an open source project that organizes websites and other<br/>

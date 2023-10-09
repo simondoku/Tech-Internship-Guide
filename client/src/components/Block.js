@@ -23,7 +23,7 @@ export const BlockSection = (props) => {
 
     return(
         <Container className="mb-3">
-            <p>{sectionName}</p>
+            <p className="fw-bold">{sectionName}</p>
             <div style={{display: 'flex', overflowX: 'auto'}}>
                 {BLOCK_SECTIONS?.[sectionId].map((item, index) => (
                     <div className="me-5 pb-2">
