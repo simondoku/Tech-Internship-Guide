@@ -82,7 +82,7 @@ router.get("/block-data", (req, res) => {
             "defcon":{ "name" : "DEFCON","link" : "defcon.org/", "description" :" DEFCON is one of the world's largest and most famous hacker conferences. It's a gathering of hackers, security professionals, and enthusiasts who come together to discuss and demonstrate security vulnerabilities, techniques, and countermeasures."},
             "apple": {"name" : "Apple WWDC","link" : "developer.apple.com/wwdc23/", "description" :" Apple's WWDC is an annual event where the company announces new software updates, developer tools, and sometimes new hardware products. It's a key event for Apple developers and enthusiasts, providing insights into the future of Apple's ecosystem."},
             "simplify":{"name" : "Simplify Resume Builder", "link": "simplify.jobs/resume-builder", "description": "Resume building tool to create clean resumes. This site tailors your resume, and automatically track applications submitted, for free with a copilot extension!"},
-
+            "algoExpert" :{name: "AlgoExpert", link: "algoexpert.io/", description: "AlgoExpert is a platform that helps you prepare for technical interviews. It provides a collection of learning videos, questions and answers that are commonly asked in technical interviews at top tech companies! "},
 
         }
     )
