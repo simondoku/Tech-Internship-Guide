@@ -8,7 +8,7 @@ export const Navbar = () => {
             <NavbarBoot data-bs-theme="dark">
                 <div style={{flex: '1'}} class="d-grid d-sm-flex">
                     <NavbarBoot.Brand href="#home" className="text-primary text-center">
-                        <img src="" width="25" height="25" className="d-inline-block align-top me-1" alt=""/>
+                        <img src={require("../images/logo.png")} width="25" height="25" className="d-inline-block align-top me-1" alt=""/>
                         Tech Internship Guide
                     </NavbarBoot.Brand>
                     <NavbarBoot.Toggle />

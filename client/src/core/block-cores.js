@@ -3,3 +3,5 @@ export const BLOCK_SECTIONS = {
     dSA: ['neetCode', 'coursera', 'geeksforgeeks'],
     note: ['personalNote', 'onlineNote'],
 } 
+
+export const BLOCK_IMAGES = new Set([ 'w3schools', 'codeacademy', 'freeCodeCamp', 'neetCode' ]);

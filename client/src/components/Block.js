@@ -7,6 +7,7 @@ import { InfoModal, ModalContent } from "./InfoModal";
 import { BLOCK_SECTIONS } from "../core/block-cores";
 import Container from 'react-bootstrap/Container';
 import { useFetch } from "../hooks/useFetch";
+import { BLOCK_IMAGES } from "../core/block-cores";
 
 const IconButtonWrapper = (props) => {
     const { children, clickAction } = props;
@@ -45,7 +46,8 @@ export const Block = (props) => {
     return(
         <Card style={{ width: blockWidth ? blockWidth : '24vw', minWidth: '14rem', backgroundColor: 'black', color: 'white' }} className="mb-2 text-light">
             <div style={{backgroundColor: "#eeeeee", margin: '10px', height: blockHeight ? blockHeight : '20vh', minHeight: '9rem'}} className="rounded">
-                <Card.Img className="img-fluid" variant="top" src=""/>
+                <Card.Img className="img-fluid" variant="top" src={BLOCK_IMAGES.has(blockId) && require('../images/'+[blockId]+'.png')} 
+                style={{height: blockHeight ? blockHeight : '20vh', minHeight: '9rem'}}/>
             </div>
             <div style={{display: 'flex', flex: '1', justifyContent: 'space-between'}} className="pb-1 px-2">
                 <div>
