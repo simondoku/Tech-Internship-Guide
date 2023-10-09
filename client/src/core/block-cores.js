@@ -1,7 +1,7 @@
 export const BLOCK_SECTIONS = {
     pFundamentals: ['w3schools', 'freeCodeCamp', 'codeacademy', 'neetCode', 'coursera', 'geeksforgeeks', "harvardCS50"],
     dSA: ['neetCode', 'coursera', 'geeksforgeeks'],
-    note: ['personalNote', 'onlineNote'],
+    note: ['personalNote', 'onlineNotes'],
     webDev: ['githubAWDRepo', 'mdn','w3schools','webDevByGoogle','frontEndMasters'],
     gameDev: ['unityLearn','unrealEngine','gameDevNet','coursera'],
     resBuild: ['samplRes','harvardWords','balanceCareers','resumeGen','zety','resumeCom','monsterResume'],
@@ -18,9 +18,9 @@ export const BLOCK_SECTIONS = {
 export const BLOCK_IMAGES = new Set([ 
     'w3schools', 'codeacademy', 'freeCodeCamp', 'neetCode', 'acm','afroTech', 'algoExpert','anitaB','applewwdc','awsReinvent','behance','blackHat','canvaTemp','carbonMade','cargo',
     'ces','codeacedemy','codepath','codepen','codeSignal','colorstack','compTIA','coursera','defcon', 'dribbble','edX',
-    'freeCodeCamp', 'frontEndMasters','gainlo','gameDevnet','geeksforgeeks','ghc','github','gitHubIntern','githubPages','glassDoor',
+    'freeCodeCamp', 'frontEndMasters','gainlo','gameDevNet','geeksforgeeks','ghc','github','githubAWDRepo','gitHubIntern','githubPages','glassDoor',
     'google','googleDocsTemps','googleio','hackerRank','harvardCS50','hloom','indeed','interviewBit','interviewio','jsfiddle',
-    'khanAcademy','leetcode','mdn','microsoftIgnite','microsoftWord','mit','monsterResume','neetCode','nsbe','onlineNotes','pramp',
+    'khanAcademy','leetcode','mdn','microsoftIgnite','microsoftWord','mit','monsterResume','neetCode','nsbe','onlineNotes','pramp','personalNote',
     'resumeGen','resumeCom','reu','rewritingTheCode','rsa','simplyHired','techCrunchDisrupt','template','theBalanceCareers','theMuse',
-    'udacity','udemy','unity','unrealEngine','w3schools','webDevByGoogle','webSummit','wix','zety','zipRecruiter',
+    'udacity','udemy','unityLearn','unrealEngine','w3schools','webDevByGoogle','webSummit','wix','zety','zipRecruiter',
 ]);
