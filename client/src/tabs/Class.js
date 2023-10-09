@@ -6,6 +6,7 @@ export const Class = () => {
         <div className="text-light">
             <BlockSection sectionName={"Programming Fundamentals"} sectionId={'pFundamentals'}/>
             <BlockSection sectionName={'Data Structures and Algorithm'} sectionId={'dSA'}/>
+            <BlockSection sectionName={'Practice and Mastery'} sectionId={'practiceMasSec'}/>
         </div>
     );
 };
