@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Block Component Testing Create Snapshot of the Block 1`] = `
+<div
+  className="mb-2 text-light card"
+  style={
+    Object {
+      "backgroundColor": "black",
+      "color": "white",
+      "width": "18rem",
+    }
+  }
+>
+  <div
+    className="rounded"
+    style={
+      Object {
+        "backgroundColor": "#eeeeee",
+        "height": "9rem",
+        "margin": "10px",
+      }
+    }
+  >
+    <img
+      className="card-img-top img-fluid"
+      src=""
+    />
+  </div>
+  <div
+    className="pb-1 px-2"
+    style={
+      Object {
+        "display": "flex",
+        "flex": "1",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <div>
+      W3schools
+    </div>
+    <div>
+      <button
+        className="btn btn-dark btn-sm"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ptiqhd-MuiSvgIcon-root"
+          data-testid="RemoveRedEyeOutlinedIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5z"
+          />
+        </svg>
+      </button>
+      <a
+        href="https://www.w3schools.com"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <button
+          className="btn btn-dark btn-sm"
+          disabled={false}
+          type="button"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ptiqhd-MuiSvgIcon-root"
+            data-testid="LaunchIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+            />
+          </svg>
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+`;
