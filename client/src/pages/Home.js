@@ -1,16 +1,14 @@
-import React from "react";
-import { TabGroup } from "../components/Tab";
-import { Navbar } from "../components/Navbar";
-import { Footer } from "../components/Footer";
-import { Stats } from "../components/Stats";
+import React from 'react';
+import { TabGroup } from '../components/Tab';
+import { Navbar } from '../components/Navbar';
+import { Footer } from '../components/Footer';
 
 export const Home = () => {
-  return (
-    <>
-      <Navbar />
-      <TabGroup />
-      <Stats />
-      <Footer />
-    </>
-  );
+    return(
+        <>
+            <Navbar />
+            <TabGroup />
+            <Footer />
+        </>
+    );
 };
