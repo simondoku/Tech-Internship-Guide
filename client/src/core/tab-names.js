@@ -14,8 +14,8 @@ export const TAB_NAMES = [
     {tabName: 'Resume', eventKey: 'resume', comp: <Resume/>}, 
     {tabName: 'Interview', eventKey: 'interview',  comp: <Interview/>},
     {tabName: 'Internships', eventKey: 'internships', comp: <Internship/>},
-    {tabName: 'Notes', eventKey: 'notes', comp: <Note/>}, 
+    {tabName: 'Forum', eventKey: 'forum', comp: <Note/>}, 
     {tabName: 'Networking', eventKey: 'networking', comp: <Networking/>},
-    {tabName: 'Stories', eventKey: 'stories', comp: <Story/>},
+    {tabName: 'Team', eventKey: 'team', comp: <Story/>},
     {tabName: 'FAQs', eventKey: 'faqs', comp: <Faq/>}
 ];

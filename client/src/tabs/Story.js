@@ -8,7 +8,7 @@ export const Story = () => {
     return(
         <div className="text-light">
             {storyDATA.map((item, index) => (
-                <FeaturedStory featuredItem={item} key={index}/>
+                <FeaturedStory featuredItem={item} key={index} personName = {item.personName}/>
             ))}   
         </div>
     );

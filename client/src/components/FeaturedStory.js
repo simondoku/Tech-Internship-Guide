@@ -1,8 +1,8 @@
 import React from "react";
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 
-export const FeaturedStory = (prop) => {
-    const { featuredItem } = prop;
+export const FeaturedStory = (props) => {
+    const { featuredItem, personName } = props;
 
     return(
         <div className="container p-3 px-5 mb-3">
@@ -13,7 +13,7 @@ export const FeaturedStory = (prop) => {
                 <div className="col-md-9 rounded">
                     <i>
                         <h5>
-                            Software Engineering Intern, {featuredItem?.company}
+                            {personName}, {featuredItem?.company}
                         </h5>
                         <div>
                             {featuredItem?.story}

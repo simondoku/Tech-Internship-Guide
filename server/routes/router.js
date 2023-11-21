@@ -108,9 +108,11 @@ router.get("/faqs", (req, res) => {
 router.get("/stories", (req, res) => {
     res.json(
         [
-            {"id": "1", "company": "Uber", "story": "Tella story?"},
-            {"id": "2", "company": "Zillow", "story": "Simon story?"},
-            {"id": "3", "company": "Almada", "story": "My summer internship at Almada was a transformative experience that immersed me in the technology sector. I handled customer inquiries, troubleshooting BIOS issues, and learned the value of diverse skills. Collaborating with interns, we presented on technical topics and explored AIs potential in cybersecurity. The internship broadened my web development skills and introduced me to AIs impact on network security and database organization. The supportive work environment, camaraderie, and teamwork were invaluable, emphasizing the importance of collaboration. The highlight was working on an AI system for database organization and network security. This experience enhanced my problem-solving, communication, and innovation skills, leaving me inspired for future endeavors in technology."}
+            {"id": "1","personName": "Beverley Herne","company": "Stetson University", "story": "Frontend Developer"},
+            {"id": "2", "personName": "Adegbola D Tella", "company": "Stetson University", "story": "Frontend Developer"},
+            {"id": "3", "personName": "Simon Doku", "company": "Stetson University", "story": "UX/UI Designer, Frontend Developer"},
+            {"id": "4", "personName": "Mohammed S Alhasawi", "company": "Stetson University", "story": "Backend Developer"},
+            {"id": "5", "personName": "Waleed A Alrefaie", "company": "Stetson University", "story": "Backend Developer"},
         ]
     )
 })
